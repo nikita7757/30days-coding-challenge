@@ -19,6 +19,7 @@ public class Median {
     }
 
     public static double findMedian(int[] nums) {
+        
         int n = nums.length;
         if (n % 2 == 1) {
             return quickSelect(nums, 0, n - 1, n / 2);
