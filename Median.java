@@ -23,7 +23,8 @@ public class Median {
         int n = nums.length;
         if (n % 2 == 1) {
             return quickSelect(nums, 0, n - 1, n / 2);
-        } else {
+        } 
+        else {
         
             int leftMid = quickSelect(nums, 0, n - 1, n / 2 - 1);
             int rightMid = quickSelect(nums, 0, n - 1, n / 2);
